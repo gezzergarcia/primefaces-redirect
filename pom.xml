@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>org.primefaces</groupId>
-    <artifactId>primefaces-test</artifactId>
+    <groupId>io.gezzer</groupId>
+    <artifactId>primefaces-webapp</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
-    <name>primefaces-test</name>
+    <name>primefaces-webapp</name>
     <properties>
         <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -144,7 +144,7 @@
                 <version>${jetty.version}</version>
                 <configuration>
                     <webAppConfig>
-                        <contextPath>/primefaces-test</contextPath>
+                        <contextPath>/primefaces-webapp</contextPath>
                         <jettyEnvXml>${project.basedir}/src/main/conf/jetty-env.xml</jettyEnvXml>
                     </webAppConfig>
                     <scanIntervalSeconds>5</scanIntervalSeconds>
