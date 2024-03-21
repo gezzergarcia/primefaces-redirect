@@ -8,17 +8,17 @@
 
 ## Setup
 
-1. Clone or download [primefaces-test](https://github.com/primefaces/primefaces-test)
-2. Start Visual Studio Code and File > Open Folder... > `primefaces-test`
+1. Clone or download [primefaces-webapp](https://github.com/gezzergarcia/primefaces-redirect)
+2. Start Visual Studio Code and File > Open Folder... > `primefaces-webapp`
 3. Click Extensions (`Ctrl+Shift+X`) and search "@recommended"
 4. Click Install Workspace Recommended Extensions
 5. Reload Visual Studio Code as needed
 
-## Running `primefaces-test` project
+## Running `primefaces-webapp` project
 
 ### Method #1
 1. Click Explorer (`Ctrl+Shift+E`)
-2. Expand Maven > primefaces-test > Plugins > jetty
+2. Expand Maven > primefaces-webapp > Plugins > jetty
 3. Click Run on the "run" goal
 
 ### Method #2
