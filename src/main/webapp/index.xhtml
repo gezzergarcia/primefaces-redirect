@@ -2,18 +2,39 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://xmlns.jcp.org/jsf/html"
     xmlns:f="http://xmlns.jcp.org/jsf/core" xmlns:jsf="http://xmlns.jcp.org/jsf"
     xmlns:ui="http://xmlns.jcp.org/jsf/facelets" xmlns:p="http://primefaces.org/ui">
+
 <f:view contentType="text/html;charset=UTF-8" encoding="UTF-8">
+    <h:outputStylesheet library="webjars" name="primeflex/3.0.1/primeflex.min.css" />
     <h:head>
     </h:head>
     <h:body>
+
         <h:form>
-            <div class="ui-fluid">
-                <p:panelGrid columns="1" layout="grid">
-                    <p:inputTextarea value="#{controlBean.text}" />
-                    <p:commandButton value="Open new window" oncomplete="window.open('newWindow.xhtml', '_blank')" />
-                </p:panelGrid>
+
+            <div class="flex flex-wrap align-items-center justify-content-center">
+                <div class="fadein animation-duration-1000 border-round surface-ground max-w-full p-3 m-3">
+                    <div
+                        class="w-full border-round surface-ground font-bold p-3 flex align-items-center justify-content-center shadow-8">
+                        <div>
+                            <div class="text-center mb-5">
+                                <div class="font-bold text-3xl">Primeface Redirect Webapp</div>
+                            </div>
+                            <div class="field">
+                                <p:outputLabel for="inputTextarea" value="Write something" hidden="True"
+                                    styleClass="font-bold text-3xl" />
+                                <p:inputTextarea id="inputTextarea" placeholder="Write something"
+                                    value="#{controlBean.text}" rows="6" cols="40"
+                                    styleClass="text-base text-color surface-overlay p-3 border-3 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full " />
+                            </div>
+                            <p:commandButton value="Submit" oncomplete="window.open('newWindow.xhtml', '_blank')"
+                                styleClass=" text-center p-3 border-round-sm bg-primary font-bold shadow-1 w-full" />
+                        </div>
+                    </div>
+                </div>
             </div>
-            
+
+
+
         </h:form>
     </h:body>
 </f:view>
