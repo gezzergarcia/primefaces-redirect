@@ -11,22 +11,23 @@
 
         <h:form>
 
-            <div class="flex flex-wrap align-items-center justify-content-center">
+            <div class="flex flex-wrap align-items-center justify-content-center ">
                 <div class="fadein animation-duration-1000 border-round surface-ground max-w-full p-3 m-3">
                     <div
                         class="w-full border-round surface-ground font-bold p-3 flex align-items-center justify-content-center shadow-8">
                         <div>
                             <div class="text-center mb-5">
-                                <div class="font-bold text-3xl">Primeface Redirect Webapp</div>
+                                <div class="font-bold text-3xl text-primary">Primeface Webapp</div>
                             </div>
                             <div class="field">
-                                <p:outputLabel for="inputTextarea" value="Write something" hidden="True"
+                                <p:outputLabel for="inputTextarea" value="Write something" rendered="false"
                                     styleClass="font-bold text-3xl" />
                                 <p:inputTextarea id="inputTextarea" placeholder="Write something"
-                                    value="#{controlBean.text}" rows="6" cols="40"
+                                    value="#{controlBean.text}" rows="6" cols="40" 
                                     styleClass="text-base text-color surface-overlay p-3 border-3 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full " />
                             </div>
-                            <p:commandButton value="Submit" oncomplete="window.open('newWindow.xhtml', '_blank')"
+                            <p:commandButton value="Submit"
+                                oncomplete="window.open('newWindow.xhtml', '_blank')"
                                 styleClass=" text-center p-3 border-round-sm bg-primary font-bold shadow-1 w-full" />
                         </div>
                     </div>
